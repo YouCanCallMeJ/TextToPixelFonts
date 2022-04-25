@@ -86,7 +86,7 @@ namespace TextToDots
                 {
                     Color color = image.GetPixel(x, y);
                     //rtxtOutput.Text +=  $"R:{color.R} G:{color.G} B:{color.B}";
-                    if (chkBoxOne.Checked)
+                    if (chkBoxInvert.Checked)
                     {
                         rtxtOutput.Text += color.R > 0 || color.G > 0 || color.B > 0 ? "1" : "0";
                     }

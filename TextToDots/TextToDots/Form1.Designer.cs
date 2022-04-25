@@ -39,7 +39,7 @@ namespace TextToDots
             this.lblFont = new System.Windows.Forms.Label();
             this.cmbFonts = new System.Windows.Forms.ComboBox();
             this.chkBoxBold = new System.Windows.Forms.CheckBox();
-            this.chkBoxOne = new System.Windows.Forms.CheckBox();
+            this.chkBoxInvert = new System.Windows.Forms.CheckBox();
             this.lblFontSize = new System.Windows.Forms.Label();
             this.lblImageWidth = new System.Windows.Forms.Label();
             this.lblImageHeight = new System.Windows.Forms.Label();
@@ -150,16 +150,16 @@ namespace TextToDots
             this.chkBoxBold.UseVisualStyleBackColor = true;
             this.chkBoxBold.CheckStateChanged += new System.EventHandler(this.txtInput_TextChanged);
             // 
-            // chkBoxOne
+            // chkBoxInvert
             // 
-            this.chkBoxOne.AutoSize = true;
-            this.chkBoxOne.Location = new System.Drawing.Point(486, 114);
-            this.chkBoxOne.Name = "chkBoxOne";
-            this.chkBoxOne.Size = new System.Drawing.Size(121, 17);
-            this.chkBoxOne.TabIndex = 13;
-            this.chkBoxOne.Text = "Conversion 0 and 1!";
-            this.chkBoxOne.UseVisualStyleBackColor = true;
-            this.chkBoxOne.CheckStateChanged += new System.EventHandler(this.txtInput_TextChanged);
+            this.chkBoxInvert.AutoSize = true;
+            this.chkBoxInvert.Location = new System.Drawing.Point(486, 114);
+            this.chkBoxInvert.Name = "chkBoxInvert";
+            this.chkBoxInvert.Size = new System.Drawing.Size(89, 17);
+            this.chkBoxInvert.TabIndex = 13;
+            this.chkBoxInvert.Text = "Inversion 0/1";
+            this.chkBoxInvert.UseVisualStyleBackColor = true;
+            this.chkBoxInvert.CheckStateChanged += new System.EventHandler(this.txtInput_TextChanged);
             // 
             // lblFontSize
             // 
@@ -291,7 +291,7 @@ namespace TextToDots
             this.Controls.Add(this.lblImageHeight);
             this.Controls.Add(this.lblImageWidth);
             this.Controls.Add(this.lblFontSize);
-            this.Controls.Add(this.chkBoxOne);
+            this.Controls.Add(this.chkBoxInvert);
             this.Controls.Add(this.chkBoxBold);
             this.Controls.Add(this.cmbFonts);
             this.Controls.Add(this.lblFont);
@@ -328,7 +328,7 @@ namespace TextToDots
         private System.Windows.Forms.Label lblFont;
         private System.Windows.Forms.ComboBox cmbFonts;
         private System.Windows.Forms.CheckBox chkBoxBold;
-        private System.Windows.Forms.CheckBox chkBoxOne;
+        private System.Windows.Forms.CheckBox chkBoxInvert;
         private System.Windows.Forms.Label lblFontSize;
         private System.Windows.Forms.Label lblImageWidth;
         private System.Windows.Forms.Label lblImageHeight;
